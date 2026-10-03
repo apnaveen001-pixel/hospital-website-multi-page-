@@ -1,0 +1,1481 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.overall{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --------------------navbar---------------------- */
+.navbar{
+    width:97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 30px;
+    background-image: linear-gradient(180deg, white, rgb(119, 243, 243));
+    position: fixed;
+    z-index: 999;
+    top:15px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px 2px grey;
+}
+
+.menubar{
+    display:flex;
+    gap:30px;
+    align-items: center;
+    transition: all 1s;
+}
+.menubar>a{
+    font-size:18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: blue;
+    
+}
+.navbt{
+    font-size: 18px;
+    padding:5px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: aqua;
+    color:rgb(19, 4, 39);
+}
+
+.logo{
+    font-family: cursive;
+    font-size: 40px;
+}
+
+#phone{
+    display: none; 
+}
+
+#menusymbol{
+    display: none;
+}
+.inp{
+    display: none;
+}
+
+
+
+/* ---------------page 1---------------------- */
+
+.page1{
+    min-height:100vh;
+    width: 100%;
+    background-image: url(hospitalbed.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.content-and-image{
+    min-height:100vh;
+    width:100%;
+    background-color: rgba(0, 140, 255, 0.288);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 30px;
+}
+.content-box{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.herot1{
+    font-size: 60px;
+    width:200px;
+}
+
+
+.heroicons{
+    display: flex;
+    gap:10px;
+}
+
+.b1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b1>button{
+    height:40px;
+    width:40px;
+    background-color:green;
+    border: none;
+    border-radius: 50%;
+    color:white;
+    font-size: 20px;
+}
+.iconp{
+    display: flex;
+    align-items: center;
+}
+.dot{
+    font-size: 5px;
+    padding-right:15px;
+}
+
+.bt2box{
+    display: flex;
+    justify-content: space-between;
+}
+.bt2box>button{
+    font-size: 20px;
+    padding:10px 10px;
+    background-color: green;
+    color:white;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.doctorsimg{
+    height:400px;
+    width:350px;
+}
+
+/* ----------------page 2-------------------------- */
+
+
+.page2{
+    min-height:100vh;
+    width:100%;
+    padding:0px 20px;
+    contain: paint;
+    
+}
+
+.text-and-imagebox{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding-top: 70px;
+    
+}
+.page2textbox{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    animation-name: page2left;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+@keyframes page2left {
+    0%{
+       transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+    
+}
+.page2-image-mainbox{
+    animation-name: page2right;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+
+}
+
+@keyframes page2right {
+    0%{
+       transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+    
+}
+
+
+.page2-imagebox{
+    width:300px;
+    height:300px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: linear-gradient(180deg, white, rgb(0, 238, 255));
+    box-shadow: 1px 2px 5px 3px grey;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.page2-image-and-text{
+    display: flex;
+    align-items: end;
+    gap:5px;
+}
+.page2-image-and-text>i{
+    font-size: 30px;
+    color:blue;
+}
+.page2textbox>.pi{
+    display: flex;
+    align-items: center;
+}
+.page2textbox>p{
+    font-size: 18px;;
+}
+.page2t1{
+    color:blue;
+}
+.page2sp{
+    padding-left: 100px;
+}
+
+.page2image{
+    height:250px;
+    width:250px;
+}
+
+
+
+/* -----------------page 3----------------------------- */
+
+.page3{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    contain: paint;
+}
+.heading{
+    color:blue;
+}
+
+.treatment-mainboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:40px;
+    padding:10px 30px;
+}
+
+.treatmentbox{
+    width:200px;
+    height:300px;
+    box-shadow: 1px 2px 4px 2px grey;
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, white, rgb(0, 89, 255), white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    transition: all 1s;
+}
+.treatmentbox:hover{
+    transform: translateY(-20px);
+    
+}
+
+.treatmentbox>i{
+    font-size:100px;
+    color:white;
+}
+.treatmentbox>p{
+    font-weight: 600;
+    font-size: 20px;;
+}
+
+.page3bt{
+    width:200px;
+}
+.page3bt>button{
+    font-size: 20px;
+    padding:5px 15px; 
+    color:white;
+    background-color:blue;
+    border: none;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.treatment-mainboxes{
+    animation-name: treatmentbox1;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+@keyframes treatmentbox1 {
+
+ 0%{
+    transform: translateY(900px);
+    }
+100%{
+    transform: translateY(0px);
+    }    
+}
+
+   
+
+
+/* ----------------page 4--------------------------- */
+
+
+.page4{
+   min-height:60vh;
+   width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    contain: paint;
+}
+
+
+.page4-mainbox{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+.page4boxes{
+    height:250px;
+    width:200px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    padding:20px;
+    transition: all 1s;
+}
+.page4boxes:hover{
+    background-color:blue;
+    color:white;
+    transform: scale(1.1);
+}
+.page4boxes>p{
+    font-size:18px;
+    font-weight: 600;
+    text-align: center;
+}
+.page4iconbox{
+    height:140px;
+    width:140px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+.page4boxes:hover .page4iconbox{
+    background-color:white;
+}
+.page4iconbox>i{
+    font-size: 50px;
+    transition: all 1s;
+}
+
+.page4boxes:hover .page4iconbox>i{
+    font-size: 50px;
+    color:blue;
+}
+
+.page4-mainbox{
+    animation-name: page4-mainbox;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+@keyframes page4-mainbox {
+
+ 0%{
+    transform: translateX(1400px);
+    }
+100%{
+    transform: translateX(0px);
+    }    
+}
+
+
+/* --------page 5----------------- */
+
+.page5{
+    height:50vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    contain: paint;
+
+}
+
+.animation-main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    transition: all 1s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-name:movingbox;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    transform: translateX(-600px);
+    
+}
+.animation-main-box:hover{
+animation-play-state: paused;
+
+}
+@keyframes movingbox {
+
+    0%{
+       transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(500px);
+
+    }
+
+
+}
+
+.animationboxes{
+    width:200px;
+    padding:10px 20px;
+    border-radius:15px;
+    text-align: center;
+    box-shadow: 1px 2px 5px 1px grey;
+    color:white;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, rgb(112, 43, 103), blue, blue, rgb(133, 66, 127)); 
+    
+}
+
+
+
+/* ------------------page 6------------------------------- */
+
+.page6{
+    min-height:90vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    contain: paint;
+}
+.main-clip-path-box{
+    transform: scale(0.9);
+}
+.page6-main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.page6-boxes {
+    height: 366px;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    padding:0px 15px;
+    gap:15px;
+    background-color:white;
+    transition: all 1s;
+    clip-path: path("M 0,30 A 30,30 0,0,1 30,0 L 266,0 A 30,30 0,0,1 296,30 L 296,261 A 35,35 0,0,1 261,296 A 30,30 0,0,0 227,331 A 35,35 0,0,1 191,365 L 30,366 A 30,30 0,0,1 0,340 L 0,30 Z");
+    box-shadow: 1px 2px 5px 2px black;
+    z-index: 2;
+}
+
+
+.main-clip-path-box:hover .page6-boxes{
+    background-color:blue;
+}
+
+.main-clip-path-box:hover .page6-outside-round{
+    background-color:blue;
+    color:white;
+    
+}
+
+
+
+.page6-outside-round{
+    font-size: 40px;
+    height:60px;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    border-radius: 50%;
+    border:4px solid blue;
+    position: absolute;
+    z-index: 900;
+    bottom:4px;
+    right:3px;
+}
+.clip-path-box{
+    height:372px;
+    width:302px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1px;
+    background-color:black;
+    clip-path: path("M 0,30 A 30,30 0,0,1 30,0 L 272,0 A 30,30 0,0,1 302,32 L 302,267 A 35,35 0,0,1 267,302 A 30,30 0,0,0 232,337 A 35,35 0,0,1 197,372 L 32,372 A 30,30 0,0,1 0,342 L 0,32 Z");
+}
+
+.main-clip-path-box{
+    position: relative;  
+    transform: scale(0.8);
+    transition: all 1s;
+}
+
+.page6-img1{
+    height:70%;
+    width:100%;
+    border-radius: 20px;
+}
+
+.availbt{
+    padding:5px 5px;
+    border: none;
+    border: 1px solid rgb(83, 82, 82);
+    border-radius: 10px;
+    width:100px;
+}
+.button-2{
+    font-size:20px;
+    width:130px;
+    padding:5px 0px;
+    border-radius: 12px;
+    border: 0px;
+    transition: all 1s;
+     background-color: rgb(165, 247, 236);
+
+}
+.more{
+    display: none;
+    transition: all 1s;
+
+}
+
+.clip-path-box:hover .more{
+    display:inline-block;
+    color:blue;
+}
+.clip-path-box:hover .button-2{
+   
+    background-color: white;
+}
+
+.clip-path-box:hover .name{
+    display:none;
+
+}
+
+.main-clip-path-box:hover{
+    transform: scale(0.9);
+}
+
+
+.page6-main-box{
+    animation-name: page6-mainbox;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 20%;
+}
+
+@keyframes page6-mainbox {
+
+ 0%{
+    transform: translateX(-1400px);
+    }
+100%{
+    transform: translateX(0px);
+    }    
+}
+
+/* --------------------page 7----------------------- */
+
+
+.page7{
+    min-height:90vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.page7-boxes{
+    background-color:white;
+}
+.main-clip-path-box:hover .page7-boxes{
+    background-image: linear-gradient(180deg, rgba(133, 172, 255, 0.877), white, rgba(133, 255, 249, 0.877));
+}
+
+.page7availbt{
+    width:130px;
+}
+.button-2-page7{
+    width:150px;
+}
+
+
+
+/* ---------------------page 8---------------------- */
+
+.page8{
+    min-height:90vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.page8-content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:50px;
+}
+.page8-boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    font-size:18px;
+    font-weight: 600;
+    color:blue;
+}
+.page8-boxes>i{
+    color:black;
+}
+
+/* ---------------------page 9---------------------- */
+
+.page9{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    contain: paint;  
+}
+.page9-boxes{
+    position: relative;
+    transform: scale(0.9);
+    transition: all 1s;
+   
+}
+
+.page-9-clip-path-mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    width:100%;
+    height:100%;
+    animation-name: review;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-duration: 8s;
+}
+
+@keyframes review {
+    0%{
+       transform: translateX(-700px);
+    }
+    100%{
+        transform: translateX(700px)
+
+    }
+    
+}
+.page-9-clip-path-mainbox:hover{
+    animation-play-state: paused;
+}
+
+
+.page-9clip-path-box{
+    height:360px;
+    width:300px;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: path("M 10,0 L 290,0 A 20,20 0,0,1 300,10 L 300,260 A 20,20 0,0,1 290,280 L 100,280 L 80,280 A 20,20 0,0,0 60,300 L 60,320 L 60,340 A 20,20 0,0,1 40,360 L 10,360 A 20,20 0,0,1 0,350 L 0,10 A 20,20 0,0,1 10,0 Z");
+}
+.page-9clip-path-box2 {
+    height: 356px;
+    width: 296px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:10px;
+    transition: all 1s;
+    clip-path: path("M 10,0 L 286,0 A 20,20 0,0,1 296,10 L 296,256 A 20,20 0,0,1 286,276 L 96,276 L 76,276 A 20,20 0,0,0 56,296 L 56,316 L 56,336 A 20,20 0,0,1 36,356 L 10,356 A 20,20 0,0,1 0,346 L 0,6 A 20,20 0,0,1 10,0 Z");
+}
+
+.revimg{
+    width:100%;
+    height:50%;
+    border-radius: 20px;
+}
+
+.page-9clip-path-inbox{
+    width: 200px;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: path("M 10,0 L 190,0 A 20,20,0,0,1 200,10 L 200,20 A 60,60,0,0,1 150,70 L 10,70 A 20,20,0,0,1 0,60 L 0,10 A 20,20,0,0,1 10,0 Z");
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+   
+}
+.star-in-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    height: 94%;
+    background-color: white;
+    clip-path: path("M 10,0 L 183,0 A 20,20,0,0,1 195,10 L 194,20 A 60,60,0,0,1 149,65 L 10,65 A 20,20,0,0,1 0,57 L 0,10 A 20,20,0,0,1 10,0 Z");
+}
+
+.stars{
+    height:40px;
+    width:150px;
+    padding-bottom: 10px;
+}
+
+.page9-boxes:hover .page-9clip-path-box2{
+    background-color:blue;
+     
+}
+.page9-boxes:hover{
+    transform: scale(1);
+}
+
+/* ------------------page 10-------------------------- */
+
+
+
+.page-10{
+    width:100%;
+    min-height:70vh;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    padding:20px 40px;
+     
+}
+.page-10-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+     flex-wrap: wrap;
+     width:100%;
+     color:white;
+}
+
+.page-10-boxes p{
+    font-size:18px;
+    color:white;
+    
+}
+.page-10>p{
+    font-size:18px;
+    color:white;
+    word-spacing: 5px;
+}
+
+.page-10-boxes i{
+    font-size:20px;
+    color:white;
+    
+}
+
+.box1{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+.box2{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.box3{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.box3 td{
+    padding:10px 0px;
+   
+}
+.box4{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.box4 td{
+    padding:10px 0px;
+   
+}
+
+.logo-round{
+    height:100px;
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+
+/* --------------------mutipage 2----------------------------- */
+
+.multi-page5{
+    height:25vh;
+}
+.animation-page2-ambulace{
+    height:50px;
+    width:100px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    background-image: linear-gradient(90deg, rgb(0, 174, 255), white, rgb(0, 174, 255));
+}
+
+.multi-page3-boxes-main{
+    gap:50px;
+}
+
+.multi-treatmentbox{
+    width:250px;
+}
+
+.page1-multi-2{
+    background-image: url(./page2-back-img.png);
+}
+
+.pag3-multi-2{
+    padding-top: 50px;
+}
+
+.page6-main-box-multi-2{
+    gap:20px;
+}
+.main-clip-path-box-multi-page-2{
+   transform: scale(0.8);
+}
+
+
+/* ----------------multipage 3----------------------- */
+
+
+.multi-page-3-page1{
+    min-height:70vh;
+    width:100%;
+    background-image: linear-gradient(180deg, blue, rgba(0, 60, 255, 0.514), blue);
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    padding:0px 20px;
+    padding-top:80px;
+    gap:50px;
+    grid-template-areas: 'imgmulti textboxmulti';
+}
+
+.multipage-page1-img{
+    height:380px;
+    width:380px;   
+}
+
+.imgbox-multi-3{
+    grid-area: imgmulti;
+}
+
+.page-3-multi-text-main-box{
+    height:55vh;
+    display: flex;
+    align-items: center;
+     grid-area: textboxmulti;
+    
+}
+.multi-page-page1-text{
+    font-size:70px;
+    width:500px;
+    color:white;
+}
+
+/* ----------------multipage 3 page 2----------------------- */
+.multi-page-3-page2{
+
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    padding-top:60px;
+    padding-left:50px;
+    padding-right:50px;
+
+
+}
+
+.left-box{
+    width:65%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.right-box{
+    width:35%;
+    height:100%;
+}
+
+.form-appoitment{
+    width:100%;
+}
+.d1{
+    display: flex;
+    gap:20px;
+    width:100%;
+}
+
+.d1in1{
+    width:50%;
+}
+.inp1{
+    width:100%;
+    margin-top:5px;
+    margin-bottom:10px;
+    height:40px;
+    padding:5px;
+    border-radius:15px;
+    border:none;
+    border:1px solid grey;
+}
+.inp1:hover{
+    box-shadow: 1px 2px 5px 2px grey;
+}
+
+
+.d1in2{
+    width:100%;
+}
+
+.formbt{
+    padding:10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color:blue;
+    color:white;
+}
+
+
+/* -------------right box------------------- */
+
+
+.right-box{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.contact-image{
+    height:150px;
+    width:100%;
+}
+.right-content-and-imagebox{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.contact-content-box{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.contact-content-box>div{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.contact-content-box>div p{
+    line-height: 20px;
+}
+
+
+
+
+
+
+/* ------------------media query--------------------- */
+
+/* ---------------------tablet view---------------------------- */
+@media only screen and (min-width:650px) and (max-width:900px){
+/* --------------------page 1----------------- */
+#phone{
+    display: inline-block;
+}
+
+.contact{
+         display: none;
+}
+
+
+
+/* ------------------page 2----------------------------- */
+
+.text-and-imagebox{
+    width:100%;
+    display: grid;
+    grid-template-areas:'box2' 
+                         'box1';
+    padding-bottom: 20px;               
+}
+
+
+.page2textbox{
+    width:100%;
+    grid-area: box1;
+    padding:0px 30px;
+}
+.page2-image-mainbox{
+     width:300px;
+     justify-self: center;  
+}
+
+/* ----------------page 3------------------------- */
+
+
+
+/* ----------------page 4--------------------------- */
+
+/* --------------page 5------------------------ */
+
+/* --------------page 6------------------------ */
+
+/* ---------------------page 8---------------------- */
+
+/* ---------------------page 9---------------------- */
+
+/* ------------------page 10-------------------------- */
+
+
+/* ---------------------multi-page 3 page1------------------------ */
+
+
+.multi-page-3-page1{
+    grid-template-areas: 'textboxmulti imgmulti';
+    gap:0px;
+}
+
+.page-3-multi-text-main-box{
+    min-height:70vh;
+}
+.multi-page-page1-text{
+    font-size:60px;
+    width:350px;
+    color:white;
+}
+
+
+}
+
+
+/* ------------------multi-3 750px to 600px---------------------- */
+@media only screen and (min-width:600px) and (max-width:750px){
+
+
+.multi-page-3-page1{
+    gap:0px;
+}    
+.multipage-page1-img{
+    height:250px;
+    width:250px;
+    
+}
+.page-3-multi-text-main-box{
+    transform: scale(0.9);
+}
+
+}
+
+
+
+
+
+
+
+/* ------------------------mobile view-------------------------- */
+
+
+
+@media only screen and (min-width:300px) and (max-width:650px){
+
+
+.menubar{
+    flex-direction: column;
+    position: absolute;
+    top:100px;
+    right:-225px;
+    align-items: center;
+    padding: 30px 10px;
+    border-radius: 30px;;
+    background-image:linear-gradient(180deg, white, rgb(0, 162, 255));
+    z-index: 999;
+    opacity: 0;
+    scale: 0;
+}
+.menubar>a{
+    color:blue;
+}
+.inp:checked+.menubar{
+    opacity:1;
+    scale: 1;
+    right:15px;
+}
+
+
+
+
+#phone{
+         display: none;     
+}
+.contact{
+         display: inline-block;
+}
+
+#menusymbol{
+    display: inline-block;
+}
+
+
+/* -------------------page 1--------------------- */
+
+.doctorsimg{
+    height:250px;
+    width:200px;
+    position: absolute;
+    top:85px;
+    right:30px;
+
+}
+.content-box{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    transform: scale(0.8);
+    position: absolute;
+    z-index: 1;
+}
+
+.content-and-image{
+    padding: 0px;
+    padding-top: 50px;
+}
+.content-box{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.heroicons{
+    margin-top:30px;
+}
+
+/* ----------------page 2--------------------------- */
+
+.text-and-imagebox{
+    width:100%;
+    display: grid;
+    grid-template-areas:'box2' 
+                         'box1';
+    padding-bottom: 20px;               
+}
+
+
+.page2textbox{
+    width:100%;
+    grid-area: box1;
+    padding:0px 10px;
+}
+.page2-image-mainbox{
+     width:300px;
+     justify-self: center;  
+}
+.page2-imagebox{
+    transform: scale(0.9);
+}
+
+
+
+/* -----------------page 3--------------------------------- */
+
+/* ----------------page 4--------------------------- */
+
+
+/* --------------page 5------------------------ */
+
+/* --------------page 6------------------------ */
+
+/* ---------------------page 8---------------------- */
+
+/* ---------------------page 9---------------------- */
+
+/* ------------------page 10-------------------------- */
+
+
+
+/* ----------------- multi-3 page-1 ---------------------------- */
+
+.multi-page-3-page1{
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+.multi-page-3-page1{
+    grid-template-areas: 'textboxmulti imgmulti';
+    gap:0px;
+}
+
+.page-3-multi-text-main-box{
+    min-height:70vh;
+}
+.multi-page-page1-text{
+    font-size:60px;
+    width:230px;
+    color:white;
+}
+
+
+.multipage-page1-img{
+    height:250px;
+    width:250px;
+    
+}
+.page-3-multi-text-main-box{
+    transform: scale(0.7);
+}
+
+
+
+
+.multi-page-3-page2{
+    flex-direction: column;
+}
+
+.left-box{
+    width:100%;
+}
+
+.right-box{
+    width:100%;
+    padding-bottom:30px;
+}
+.d1{
+    flex-direction: column;
+}
+.d1in1{
+    width:100%;
+}
+.inp1{
+    width:100%;
+}
+
+}
+
+/* -------------------multi-3 350px to 500px----------------------- */
+@media only screen and (min-width:350px) and (max-width:500px){
+
+.multi-page-3-page1{
+    padding-left:10px;
+    padding-right:10px;
+    align-content: center;
+    gap:0px;
+   
+
+}
+
+.multi-page-3-page1{
+    grid-template-areas: 'textboxmulti '
+                          'imgmulti';
+}
+
+.page-3-multi-text-main-box{
+    min-height:40vh;
+    align-items: start;
+   
+}
+.multi-page-page1-text{
+    font-size:60px;
+    width:350px;
+    color:white;
+}
+
+
+.multipage-page1-img{
+    height:250px;
+    width:250px;
+    
+    
+}
+.imgbox-multi-3{
+    
+   
+
+}
+.page-3-multi-text-main-box{
+    transform: scale(0.7);
+    height:200px;
+}    
+}
+
+
+
+
+
+/* --------------------300-350px-------------------- */
+
+@media only screen and (min-width:300px) and (max-width:350px){
+
+/* --------------page 1----------------------- */
+.bt2box>button{
+    
+    font-size: 18px;
+}
+
+/* ----------------page 2------------------------ */
+
+
+/* ----------------multi-3 page1----------------------- */
+
+.multi-page-3-page1{
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 60px;
+    align-content: center;
+   
+   
+
+}
+
+.multi-page-3-page1{
+    grid-template-areas: 'textboxmulti '
+                          'imgmulti';
+                          gap:20px;
+}
+
+.page-3-multi-text-main-box{
+    min-height:40vh;
+    align-items: start;
+   
+}
+.multi-page-page1-text{
+    font-size:60px;
+    width:325px;
+    color:white;
+}
+
+
+.multipage-page1-img{
+    height:250px;
+    width:250px;
+    
+    
+}
+.imgbox-multi-3{
+    
+   
+
+}
+.page-3-multi-text-main-box{
+    transform: scale(0.7);
+    height:200px;
+    
+}   
+
+}
